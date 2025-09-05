@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.celda {
+    background-color: black;
+    border: 1px solid pink;
+}
+
+.active {
+    background-color: purple;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+}
+
+button:hover {
+    background-color: #388e3c;
+}

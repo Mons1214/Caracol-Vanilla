@@ -1,18 +1,26 @@
 .grid {
+    width: 320px;
+    height: 320px;
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
     margin-bottom: 15px;
+    background: linear-gradient(to right, #d5fb58, #94f143);
 }
 
 .celda {
     background-color: black;
-    border: 1px solid pink;
+    border: 4px solid rgb(91, 241, 94);
 }
 
 .active {
-    background-color: purple;
+    background-color: rgb(53, 227, 184);
+    font-size: 60px;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 100px;
+
 }
 
 button {
@@ -22,10 +30,35 @@ button {
     border-radius: 6px;
     border: none;
     margin-right: 10px;
-    background-color: #4caf50;
+    background-color: #32fbe3;
     color: white;
 }
 
-button:hover {
-    background-color: #388e3c;
+.boton1 {
+    background: linear-gradient(to right, #ff6b6b, #ffeeaa);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.boton2 {
+    background: linear-gradient(to right,  #ffeeaa, #54eca5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.boton3 {
+    background: linear-gradient(to right, #58eabc, #3b97ec);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton4 {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }

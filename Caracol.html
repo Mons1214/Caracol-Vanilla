@@ -10,23 +10,32 @@
 
 <body>
     <div class="grid">
-        <div class="celda">0</div>
-        <div class="celda">1</div>
-        <div class="celda">2</div>
-        <div class="celda">3</div>
-        <div class="celda">4</div>
-        <div class="celda">5</div>
-        <div class="celda">6</div>
-        <div class="celda">7</div>
-        <div class="celda">8</div>
+        <audio id="audio-cancion" src="Uli - Cachirula, Loojan, Fuentes Prod.mp3" loop></audio>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
     </div>
 
-    <button id="stop">Detener</button>
-    <button id="reiniciar">Reiniciar</button>
-    <button id="next">Avanzar</button>
-    <button id="retroceder">Retrocede</button>
-    
-    <script src="Caracol.js"></script>
+    <button id="stop" class="boton1">Detener</button>
+    <button id="reiniciar" class="boton2">Reiniciar</button>
+    <button id="next" class="boton3">Avanzar</button>
+    <button id="retroceder" class="boton4">Retrocede</button>
+
+        <script src="Caracol.js"></script>
+        <script>
+            document.addEventListener('click', function() {
+                var audio = document.getElementById('audio-cancion');
+                if (audio.paused) {
+                    audio.play();
+                }
+            }, { once: true });
+        </script>
 </body>
 
 </html>
